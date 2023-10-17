@@ -1,0 +1,486 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS for .navbar-left class */
+
+.container {
+    background-image: url(https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* Align items to the top of the container */
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+    color: white;
+    gap: 20px;
+}
+
+.navbar-left img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    /* Make the image round */
+    object-fit: cover;
+    /* Ensure the image covers the entire container while maintaining its aspect ratio */
+    margin-right: 30px;
+    /* Add some spacing between the logo and the text */
+}
+
+#locationSelect {
+    border: none;
+    background-color: transparent;
+    color: white;
+    margin-left: 10px;
+    border: none;
+
+    font-size: 20px;
+
+    /* Optionally, you can add more styles here, like background-color, font-size, etc. */
+}
+
+#locationSelect option {
+    color: white;
+    background-color: black;
+    margin-right: 20px;
+
+}
+
+/* Style the map marker icon */
+.fa-map-marker {
+    font-size: 20px;
+    padding-left: 25px;
+}
+
+
+/* CSS for .navbar-right section */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    margin-right: 10px;
+    justify-content: space-evenly;
+}
+
+.navbar-right a {
+    text-decoration: none;
+    color: white;
+    /* Link text color */
+    margin: 0 15px;
+    /* Adjust the spacing between links */
+    font-weight: bold;
+    /* Optionally, set the font weight */
+}
+
+
+.navbar-right button {
+    background-color: #001B39;
+    color: white;
+    /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    /* Optional: Add border-radius for rounded corners */
+    margin-left: 15px;
+    /* Adjust the spacing between the last link and the button */
+    cursor: pointer;
+}
+
+.navbar-right button:hover {
+    background-color: #001B39;
+}
+
+
+
+/* CSS for the parent container */
+.both {
+    display: flex;
+}
+
+/* CSS for the left side (70% width) */
+.left {
+    width: 70%;
+    padding: 20px;
+    /* border: 2px solid green; */
+    /* background-color: #f9f9f9; Optional: Background color for the left side */
+}
+
+.left h1,
+h4,
+p {
+    color: white;
+    /* width:50%; */
+}
+
+/* CSS for the right side (30% width, fixed) */
+.right {
+    width: 20%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: 40px;
+    z-index: 101;
+    position: fixed;
+    right: 0;
+    top: 100px;
+    /* border: 2px solid red; */
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+
+}
+
+/* Additional styling for the right side elements */
+.right h1 {
+
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.right p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: grey;
+}
+
+.right h2 {
+    color: #FBBC04;
+}
+
+#carSelect {
+    width: 82%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.newinp input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+.right button {
+    width: 100%;
+    padding: 10px;
+    background-color: #001B39;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+
+.right button:hover {
+    background-color: #001B39;
+}
+
+
+.b1 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    width: 50%;
+
+}
+
+.l1,
+.r1 {
+    text-align: center;
+}
+
+.l1 i,
+.r1 i {
+    font-size: 36px;
+    color: white;
+}
+
+.l1 h2,
+.r1 h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: white;
+}
+
+.l1 p,
+.r1 p {
+    font-size: 16px;
+    color: white;
+}
+
+
+
+/* Styles for the container */
+.container2 {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Styles for the navbar links */
+.container2 a {
+    text-decoration: none;
+    color: #333;
+    /* Default text color */
+    transition: color 0.1s;
+    /* Smooth transition for text color change */
+    font-weight: bold;
+
+}
+
+/* Underline effect and text color change when the link is hovered or active */
+.container2 a:hover,
+.container2 a:active {
+    text-decoration: underline;
+    color: #001B39;
+    /* Change text color on hover/active */
+}
+
+
+/* Styles for the services container */
+.services {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-left: 40px;
+
+
+
+}
+
+/* Styles for the grid layout within the services container */
+.services div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 80%;
+    margin-left: -20px;
+    background-color: #EEEEEE;
+}
+
+/* Styles for the service items (anchor tags) */
+.services a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* Styles for the service item images */
+.services img {
+    width: 100px;
+    /* Set the width as per your design */
+    height: 100px;
+    /* Set the height as per your design */
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Styles for the service item text (optional) */
+.services a span {
+    font-weight: bold;
+}
+
+.services p {
+    width: 70%;
+    color: black;
+    text-align: left;
+    margin-left: -20px;
+
+}
+
+.services h1 {
+    width: 70%;
+    color: black;
+    text-align: left;
+    margin-left: -20px;
+    border-radius: 10px;
+
+}
+
+
+/* Styles for the carservices container using display: flex */
+.carservices {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+
+.carservices div {
+    width: 70%;
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Styles for the carWorks container using display: grid */
+.carWorks {
+    text-align: left;
+    margin-bottom: 40px;
+    width: 70%;
+    margin-left: 40px;
+
+
+}
+
+.carWorks div {
+    width: 70%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Styles for the service items (anchor tags) */
+.carservices a,
+.carWorks a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styles for the service item images */
+.carservices img {
+    width: 100%;
+    /* Set the width as per your design */
+    height: 100%;
+    /* Set the height as per your design */
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+
+.carWorks img {
+    width: 100%;
+    /* Set the width as per your design */
+    height: 100%;
+    /* Set the height as per your design */
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.rvw h1{
+    margin-left:40px;
+}
+.review {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width:70%;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left:30px;
+    
+}
+
+.rev {
+    display: flex;
+    gap: 20px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+
+.rev img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.revi {
+    display: flex;
+    color: black;
+}
+
+.rev h2 {
+    margin-bottom: 10px;
+    color: black;
+
+}
+
+.revi p {
+    margin: -3px 0 0 10px;
+    color: black;
+}
+
+.rev i.fa-star {
+    color: gold;
+}
+
+.rev p {
+    color: black;
+}
+
+
+/* Optional: Add hover effect */
+.rev:hover {
+    background-color: #f5f5f5;
+    transition: background-color 0.3s ease;
+}
+
+
+.footer {
+    background-color: #001B39;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    width: 20%;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+/* Optional: Add hover effect for list items */
+.footer-section ul li:hover {
+    text-decoration: underline;
+}
