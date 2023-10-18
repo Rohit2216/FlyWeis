@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration Forms</title>
+    <link rel="stylesheet" href="./styles/login.css">
+
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="login-container">
+            <h2>Login </h2>
+            <div class="input-group">
+                <input type="text" id="loginMobileNumber" placeholder="Enter Mobile Number">
+            </div>
+            <button class="login-button" onclick="login()">Login</button>
+            <button class="toggle-button" onclick="toggleForm()">Register</button>
+        </div>
+
+        <div class="registration-container">
+            <h2>Registration </h2>
+            <div class="input-group">
+                <input type="text" id="regMobileNumber" placeholder="Enter Mobile Number">
+                <div class="error-message" id="error-message"></div>
+            </div>
+            <button class="register-button" onclick="register()">Register</button>
+            <button class="toggle-button" onclick="toggleForm()">Login</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+
+
+<script src="./src/login-register.js"></script>

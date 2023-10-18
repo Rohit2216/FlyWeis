@@ -1,0 +1,26 @@
+ .input-group {
+     margin-bottom: 10px;
+ }
+
+ .error-message {
+     color: red;
+ }
+
+ .registration-container {
+     display: none;
+ }
+
+ .form-container {
+     margin: 0 auto;
+     width: 300px;
+     text-align: center;
+ }
+
+ .toggle-button {
+     background-color: #001B39;
+     color: white;
+     border: none;
+     padding: 10px 20px;
+     margin-bottom: 10px;
+     cursor: pointer;
+ }

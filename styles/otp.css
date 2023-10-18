@@ -1,0 +1,55 @@
+/* Your styles here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.otp-verification-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    padding-right: 40px;
+    /* border:2px solid red;    */
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.verify-button {
+    background-color: #001B39;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#verification-status {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #001B39;
+}

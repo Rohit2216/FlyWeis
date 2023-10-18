@@ -268,7 +268,6 @@ p {
     margin-left: 40px;
 
 
-
 }
 
 /* Styles for the grid layout within the services container */
@@ -279,12 +278,17 @@ p {
     width: 80%;
     margin-left: -20px;
     background-color: #EEEEEE;
+    margin-top:10px;
+    padding:20px 0 40px 0;
+    border-radius: 10px;
+
 }
 
 /* Styles for the service items (anchor tags) */
 .services a {
     text-decoration: none;
-    color: #333;
+    color: #001B39;
+    font-weight: bold;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -323,6 +327,69 @@ p {
 
 }
 
+
+.curated {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-left: 40px;
+
+
+
+}
+
+/* Styles for the grid layout within the curated container */
+.curated div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 80%;
+    margin-left: -20px;
+    background-color: white;
+}
+
+/* Styles for the service items (anchor tags) */
+.curated a {
+    text-decoration: none;
+    color: #001B39;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* Styles for the service item images */
+.curated img {
+    width: 100px;
+    /* Set the width as per your design */
+    height: 100px;
+    /* Set the height as per your design */
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Styles for the service item text (optional) */
+.curated a span {
+    font-weight: bold;
+}
+
+.curated p {
+    width: 70%;
+    color: black;
+    text-align: left;
+    margin-left: -20px;
+
+}
+
+.curated h1 {
+    width: 70%;
+    color: black;
+    text-align: left;
+    margin-left: -20px;
+    border-radius: 10px;
+
+}
 
 /* Styles for the carservices container using display: flex */
 .carservices {
@@ -483,4 +550,17 @@ p {
 /* Optional: Add hover effect for list items */
 .footer-section ul li:hover {
     text-decoration: underline;
+}
+
+
+.sliding-panel {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Off-screen initially */
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+    z-index: 999;
 }
